@@ -10,13 +10,12 @@ if (number % 2 === 0){
 //2. Given a positive integer. Bring the last digit of the number to the beginning. Print the new
 //number. If the last digit of the inserted number is 0, number remains the same.
 let a = prompt(`Type a number!`)
-lastDigit = a % 10
-middleDigit  = (a % 100 - lastDigit) / 10
-firstDigit = (a-( `` + middleDigit + lastDigit)) / 100
+let lastDigit = a % 10
+let restOfNumber = Math.floor(a / 10)
 if(lastDigit === 0){
     console.log(a)
 } else {
-    console.log(`` + lastDigit + middleDigit + firstDigit)
+    console.log(`` + lastDigit + restOfNumber)
 }
 
 
@@ -28,7 +27,7 @@ c = +prompt(`Type a number.`)
 d = +prompt(`Type a number.`)
 e = +prompt(`Type a number.`)
 f = +prompt(`Type a number.`)
-avg = (b + c + d + e + f) / 5
+let avg = (b + c + d + e + f) / 5
 
 
 //4. Given three numbers. Sort them by the ascending order.
