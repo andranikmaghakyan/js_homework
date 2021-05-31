@@ -9,13 +9,15 @@ if (number % 2 === 0){
 
 //2. Given a positive integer. Bring the last digit of the number to the beginning. Print the new
 //number. If the last digit of the inserted number is 0, number remains the same.
-let a = prompt(`Type a number!`)
+let a = +prompt(`Type a number!`)
 let lastDigit = a % 10
 let restOfNumber = Math.floor(a / 10)
-if(lastDigit === 0){
-    console.log(a)
-} else {
-    console.log(`` + lastDigit + restOfNumber)
+if (a > 0){
+    if(lastDigit === 0){
+        console.log(a)
+    } else {
+        console.log(`` + lastDigit +restOfNumber)
+    }
 }
 
 
