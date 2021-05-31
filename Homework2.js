@@ -57,7 +57,7 @@ if(number1 > number2 && number2 > number3){
 var n = +prompt(`Type a number.`)
 var i = 0
 var j = 0
-if (n % 2 === 0 && Math.floor(n / 10)){
+if (n % 2 === 0 && !Math.floor(n / 10)){
     i += 1
 }
 if (n % 3 === 0 && n % 10 === 1){
