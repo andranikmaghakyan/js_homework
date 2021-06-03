@@ -18,8 +18,8 @@ if (a === 0 || b === 0 || c === 0){
 
 //3. Insert a digit and a number. Check whether the digits contains in the
 //number or not.
-let digit = +prompt()
-let number = +prompt()
+let digit = +prompt(`Type a number.`)
+let number = +prompt(`Type a number.`)
 while (number != 0){
     if(number % 10 === digit){
         break;
