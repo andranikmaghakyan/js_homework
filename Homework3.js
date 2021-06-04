@@ -10,11 +10,14 @@ let b = +prompt(`Type a number.`)
 let c = +prompt(`Type a number.`)
 if (a === 0 || b === 0 || c === 0){
     console.log(`unsigned`)
+} else if(a < 0 && b < 0 && c < 0){
+    console.log(`-`)
 } else if(a < 0 && b < 0 || a < 0 && c < 0 || b < 0 && c < 0){
     console.log(`+`)
 } else if(a < 0 || b < 0 || c < 0){
     console.log(`-`)
-}
+} 
+
 
 //3. Insert a digit and a number. Check whether the digits contains in the
 //number or not.
