@@ -1,7 +1,7 @@
 //1. Given a number round it to the nearest 50 without using “if” operator
 //(conditions).
 let number2 = (`Type a number.`)
-Math.round(num / 50)*50
+Math.round(number2 / 50)*50
 
 //2. Find the sign of product of three numbers without multiplication
 //operator. Display the specified sign.
