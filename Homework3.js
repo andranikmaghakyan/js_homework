@@ -1,6 +1,6 @@
 //1. Given a number round it to the nearest 50 without using “if” operator
 //(conditions).
-let num = (`Type a number.`)
+let number2 = (`Type a number.`)
 Math.round(num / 50)*50
 
 //2. Find the sign of product of three numbers without multiplication
@@ -37,32 +37,33 @@ if(number % 10 === digit){
 
 //4. Enter a number. Find the difference between its biggest and smallest
 //digits.
-
-
-
-
-
-
-
-
-
-
-
-
+let num = +prompt(`Type a number.`)
+let maxDigit = num % 10
+let minDigit = num % 10
+while (num != 0){
+    if(num % 10 > maxDigit){
+        maxDigit = num % 10
+    }
+    if(num % 10 < minDigit){
+        minDigit = num % 10
+    }
+    num = Math.floor(num / 10)
+}
+console.log(maxDigit - minDigit)
 
 //5. Insert a number. Print ‘yes’ if the number is prime, ‘no’ otherwise.
-let num = +prompt(`Type a number.`)
-let number = num
+let num1 = +prompt(`Type a number.`)
+let number1 = num1
 let digits;
 let sum = 0
 while(number != 0){
-    digits = number % 10
-    number = Math.floor(number / 10)
+    digits = number1 % 10
+    number1 = Math.floor(number1 / 10)
     sum += digits
 } 
-if(num === 2 || num === 3 || num === 5 || num === 7){
+if(num1 === 2 || num1 === 3 || num1 === 5 || num1 === 7){
     console.log(`Yes`)
-} else if (sum % 3 === 0 || num % 5 === 0 || num % 2 === 0) {
+} else if (sum % 3 === 0 || num1 % 5 === 0 || num1 % 2 === 0) {
     console.log(`No`)
 } else {
     console.log(`Yes`)
