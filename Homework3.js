@@ -53,17 +53,9 @@ console.log(maxDigit - minDigit)
 
 //5. Insert a number. Print ‘yes’ if the number is prime, ‘no’ otherwise.
 let num1 = +prompt(`Type a number.`)
-let number1 = num1
-let digits;
-let sum = 0
-while(number != 0){
-    digits = number1 % 10
-    number1 = Math.floor(number1 / 10)
-    sum += digits
-} 
 if(num1 === 2 || num1 === 3 || num1 === 5 || num1 === 7){
     console.log(`Yes`)
-} else if (sum % 3 === 0 || num1 % 5 === 0 || num1 % 2 === 0) {
+} else if (num1 % 3 === 0 || num1 % 5 === 0 || num1 % 2 === 0 || Math.sqrt(num1) - Math.floor(Math.sqrt(num1)) === 0) {
     console.log(`No`)
 } else {
     console.log(`Yes`)
