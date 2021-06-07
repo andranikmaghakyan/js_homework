@@ -23,15 +23,17 @@ if (a === 0 || b === 0 || c === 0){
 
 //3. Insert a digit and a number. Check whether the digits contains in the
 //number or not.
-let digit = +prompt(`Type a number.`)
-let number = +prompt(`Type a number.`)
+let digit = Math.abs(+prompt(`Type a number.`))
+let number = Math.abs(+prompt(`Type a number.`))
+let lastDigit = number % 10
 while (number != 0){
-    if(number % 10 === digit){
+    if(lastDigit === digit){
         break;
         }
+        lastDigit = number % 10
     number = Math.floor(number / 10)
 }
-if(number % 10 === digit){
+if(lastDigit === digit){
     console.log(`Yes`)
 } else {
     console.log(`No`)
