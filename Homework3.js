@@ -41,7 +41,7 @@ if(lastDigit === digit){
 
 //4. Enter a number. Find the difference between its biggest and smallest
 //digits.
-let num = +prompt(`Type a number.`)
+let num = Math.abs(+prompt(`Type a number.`))
 let maxDigit = num % 10
 let minDigit = num % 10
 while (num != 0){
