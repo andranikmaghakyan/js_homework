@@ -59,7 +59,7 @@ console.log(maxDigit - minDigit)
 let num1 = +prompt(`Type a number.`)
 if(num1 === 2 || num1 === 3 || num1 === 5 || num1 === 7){
     console.log(`Yes`)
-} else if (num1 % 3 === 0 || num1 % 5 === 0 || num1 % 2 === 0 || Math.sqrt(num1) - Math.floor(Math.sqrt(num1)) === 0) {
+} else if (num1 % 3 === 0 || num1 % 5 === 0 || num1 % 2 === 0 || Math.sqrt(num1) - Math.floor(Math.sqrt(num1)) === 0 || Math.cbrt(num1) - Math.floor(Math.cbrt(num1)) === 0) {
     console.log(`No`)
 } else {
     console.log(`Yes`)
