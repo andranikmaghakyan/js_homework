@@ -16,7 +16,9 @@ if (a === 0 || b === 0 || c === 0){
     console.log(`+`)
 } else if(a < 0 || b < 0 || c < 0){
     console.log(`-`)
-} 
+} else if(a > 0 && b > 0 && c > 0){
+    console.log(`+`)
+}
 
 
 //3. Insert a digit and a number. Check whether the digits contains in the
