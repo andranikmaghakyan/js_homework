@@ -25,6 +25,9 @@ if(number1 > number2){
     min = number1
     max = number2  
 }
+if(min === 1){
+    arr.push(min)
+}
 for(let i = min ; i < max ; i++){
     if(min === 2){
         arr.push(i - 1)
