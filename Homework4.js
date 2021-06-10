@@ -26,15 +26,15 @@ if(number1 > number2){
     max = number2  
 }
 for(let i = min ; i < max ; i++){
-    if(min === 4){
+    if(min === 2){
         arr.push(i - 1)
     }
     min = i
-    while(min != 4){
+    while(min != 2){
         if(min % 2 === 1){
             break;
         }
-        if(min / 2 === 4){
+        if(min / 2 === 2){
             min = min / 2
             break;
         } else {
@@ -42,7 +42,6 @@ for(let i = min ; i < max ; i++){
         }
     }      
 }
-
 //4.Insert a number. Print “yes” if it contains 3 successive zeros, otherwise print “no”.
 let num1 = prompt(`Type a number.`)
 for(let i = 0 ; i < num1.length ; i++){
