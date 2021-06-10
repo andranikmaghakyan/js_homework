@@ -25,7 +25,6 @@ if(number1 > number2){
     min = number1
     max = number2  
 }
-debugger
 for(let i = min ; i < max ; i++){
     if(min === 4){
         arr.push(i - 1)
