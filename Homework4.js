@@ -7,7 +7,7 @@ let number = prompt(`Type a number.`)
 let nineCount = 0
 for(let i = 0 ; i < number.length ; i++){
     if(number[i] == 9){
-        nineCount += 1
+        nineCount++
     }
 }
 console.log(nineCount)
