@@ -47,7 +47,8 @@ for(let i = min ; i < max ; i++){
 }
 //4.Insert a number. Print “yes” if it contains 3 successive zeros, otherwise print “no”.
 let num1 = prompt(`Type a number.`)
-for(let i = 0 ; i < num1.length ; i++){
+let i = 0
+for(i = 0 ; i < num1.length ; i++){
      if(num1[i] == 0 && num1[i + 1] == 0 && num1[i + 2] == 0){
         break;
     } 
