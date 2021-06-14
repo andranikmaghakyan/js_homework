@@ -1,5 +1,5 @@
 //1.Given a number print its digits count.
-let num = Math.abs(+prompt(`Type a number`)) + ''
+let num = prompt(`Type a number`)
 console.log(num.length)
 
 //2.Count numbers of digit 9 in a number.
