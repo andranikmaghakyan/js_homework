@@ -67,6 +67,10 @@ if(m === 0){
     n = 1
 }
 let num3 = n
-for(let i = 1 ; i < m ; i++){
+for(let i = 1 ; i < m; i++){
+    if(n < 0){
+        console.log(`Invalid input.`)
+        break;
+    }
     n = n * num3
 } 
