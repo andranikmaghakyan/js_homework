@@ -57,12 +57,12 @@ function findUniqueNumbers(arr2){
         for(let i = 0 , j = 0; i < arr2.length ; i++ , j++){
             for(let n = 1 ; n < arr2.length ; n++){
             if(arr2[i] === arr2[n + j]){
-                arr2[i] = 0
+                arr2[i] = `not unique`
                 }
             }       
         }
         for(let i = 0 ; i < arr2.length ; i++){
-            if(arr2[i]){
+            if(arr2[i] !== `not unique`){
                 uniqueNumbers.push(arr2[i])
             }
     }
