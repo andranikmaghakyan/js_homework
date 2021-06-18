@@ -14,7 +14,7 @@ function seperateNumbersIntoOddsAndEvens(arr){
 }
 
 //2.Given a word and a list of possible anagrams, select the correct sublist.
-unction possibleAnagram(arr1 , word){
+function possibleAnagram(arr1 , word){
     let arrAnagram = []
     for(let i = 0 ; i < arr1.length ; i++){
         let anagram = arr1[i]
