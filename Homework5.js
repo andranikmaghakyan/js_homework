@@ -26,7 +26,7 @@ function possibleAnagram(arr1 , word){
                 }
             }
         }
-        if(count === arr1[i].length){
+        if(count === arr1[i].length && arr1[i].length === word.length){
             arrAnagram.push(anagram)
         }
     }
